@@ -339,10 +339,11 @@ window.addEventListener("DOMContentLoaded", function(){
 	var clearDataLink = $('clearData');
 	clearDataLink.addEventListener("click", clearStoredData);
 	var saveLocalData = $('submit');
-	saveLocalData.addEventListener("Click", saveData)
+	saveLocalData.addEventListener("click", validate);
+	//saveLocalData.addEventListener("Click", saveData)
 	
-	var save = $('submit');
-	save.addEventListener("click", saveData);
+	//var save = $('submit');
+	//save.addEventListener("click", saveData);
 
 	
 });
