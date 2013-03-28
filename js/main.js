@@ -153,6 +153,8 @@ window.addEventListener("DOMContentLoaded", function(){
 		createSubList.appendChild(imgLi);
 		var newImg = document.createElement('img');
 		var setSrc = newImg.setAttribute("src", "img/"+ groupName +".png");
+		newImg.setAttribute("height", "128");
+		newImg.setAttribute("width", "128");
 		imgLi.appendChild(newImg);
 	}
 	
@@ -202,7 +204,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		if(verify){
 			
 			localStorage.removeItem(this.key);
-			alert("Contact was deleted!");
+			alert("Reminder was deleted!");
 			window.location.reload();
 			
 		}else{
@@ -235,7 +237,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		save.removeEventListener("click", saveData);
 		
 		//Change Submit button value to edit button
-		$('submit').value = "Edit Contact";
+		$('submit').value = "Edit Reminder";
 		var editSubmit = $('submit');
 		
 		//Save the key created
