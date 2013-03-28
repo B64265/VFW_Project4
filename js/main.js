@@ -222,7 +222,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 		
 		toggleControl("off");
-		
+		$('remindTitle').value = reminder.remindTitle[1];
 		$('groups').value = reminder.group[1];
 		$('due').value = reminder.dueDate[1];
 		$('recurrence').value = reminder.recurrence[1];
