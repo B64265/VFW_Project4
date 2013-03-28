@@ -5,7 +5,8 @@
 
 var json = {
 	"reminder1": {
-		"group": ["Group", "Personal"],
+		"" : ["Image", ""],
+		"group": ["Group:", "Personal"],
 		"remindTitle" : ["Reminder Title:", "Lunch"],
 		"dueDate"	: ["Due Date:", "2013-03-28"],
 		"recurrence" : ["Recurrence:", "10"],
