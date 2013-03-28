@@ -1,0 +1,97 @@
+ <!doctype html>
+  <!-- Jeremy Goldman
+	 Visual Frameworks
+	 Project 3
+	 Term :1303
+ -->
+
+ <html>
+ 	<head>
+ 	
+ 		<!-- Character Set Meta -->
+ 		<meta charset="uft-8" />
+ 		
+ 		<!-- Search Engine Optimization meta tags -->
+ 		<meta name = "description" content="RemeindMe is a simple To-Do list app." />
+ 		<meta name = "keywords" content="RemindMe, Jeremy Goldman, to-do, reminder" />
+ 		<meta name="robots" content="index, follow" />
+ 		
+ 		<!-- viewport meta tag for Mobile Browser scaled page -->
+ 		<meta name="viewport" content="user-scalable=no, width=device-width" />
+ 		<meta name="HandheldFriendly" content="True" />
+ 		<meta name="MobileOptimized" content="320" />
+ 		
+ 		<!--Page Title-->
+ 		<title>RemindMe</title>
+ 		
+ 		<!--CSS Link-->
+ 		<link href="css/styles.css" rel="stylesheet" />
+ 		
+
+ 		
+ 	</head>
+ 	<body>
+ 		
+ 		<!-- Page content lives here.-->
+        <h1>Add a Reminder</h1>
+        
+        <!-- Form data-->
+        
+        <form action = "#" method="post" id="reminderForm">
+        	<fieldset>
+	        	<legend>Set Reminder</legend>
+	        	<span>* fields are required.</span>
+	        	<ul id="errors"></ul>
+	        	<ul>
+	        		<!-- Select / Option -->
+	        		<li id="select">
+	        			<label for="category">Reminder Category:</label>
+	        		</li>
+	        		
+	        		
+	        		<!-- Label and text field -->
+	        		<li><label for="remindTitle">*Name:</label><input type="text" id="remindTitle" /></li>
+	        		
+	        		
+	        		<!-- Date -->
+	        		<li><label for="due">*Due Date:</label><input type="date" id="due" /></li>
+	        		
+	        		
+	        		<!-- Radio Buttons -->
+	        		<li>What is the Priority of this event?
+		        		<ul>
+			        		<li><label for="hipri">High Priority</label><input type="radio" name="priority" value="high" id="hipri" /></li>
+			        		<li><label for="stdpri">Normal Priority</label><input type="radio" checked name="priority" value="normal" id="stdpri" /></li>
+			        		<li><label for="lopri">Low Priority</label><input type="radio" name="priority" value="low" id="lopri" /></li>
+		        		</ul>
+		        	</li>
+	        		
+	        		
+	        		<!-- Range Selection -->
+	        		<li>
+		        		<label for="recurrence">*A few or several recurrences in the next month?</label>
+		        		
+		        		<input type="range" id="recurrence" min="0" max="10" value="0" name="recurrence" />
+	        		</li>
+	        		<!-- Text Area -->
+	        		<li>
+	        			<label for="description">Description:</label>
+	        			<textarea id="description" form="reminderForm"></textarea>
+	        		</li>
+	        		<!-- Hidden input -->
+	        		<input type="hidden" value="someData" />
+	        	</ul>
+        	</fieldset>
+        	<!-- Submit Button -->
+        	<input type="button" value="Submit" id="submit"/>
+        </form>
+        <br />
+        <!-- Clear and Display Data Links -->
+        <a href="#" id="clearData">Clear Storage</a>
+        <a href="#" id="showData">Display Data</a>
+        <a href="additem.html" id="addNewForm" style="display:none;">Add New Reminder</a>
+ 		<!--JS Link-->
+ 		<script src="js/json.js" type="text/javascript"></script>
+ 		<script type="text/javascript" src="js/main.js"></script>
+ 	</body>
+ </html>
